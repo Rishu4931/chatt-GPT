@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishu Singh | Portfolio</title>
+  <style>
+    /* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background: #e9e2e2;
+}
+body {
+  margin: 0;
+  height: 100vh;
+    background: linear-gradient(270deg, #ff6b6b, #f06595, #845ef7, #5c7cfa);
+}
+/* 
+@keyframes rgbShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+} */
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #111;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul { list-style: none; display: flex; }
+header nav ul li { margin-left: 20px; }
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+header nav ul li a:hover { color: #00bcd4; }
+
+/* Hero */
+#hero {
+  height: 100vh;
+  background: linear-gradient(to right, #00bcd4, #3f51b5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+#hero h1 { font-size: 3rem; margin-bottom: 20px; }
+#hero h1 span { color: #ffeb3b; }
+#hero p { font-size: 1.2rem; margin-bottom: 30px; }
+#hero button {
+  padding: 12px 25px;
+  background: #fff;
+  color: #3f51b5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+#hero button:hover { transform: scale(1.1); background: #ffeb3b; }
+
+/* Sections */
+section { padding: 80px 20px; max-width: 1000px; margin: auto; }
+h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; color: #3f51b5; }
+
+/* Cards */
+.cards { display: flex; justify-content: space-around; flex-wrap: wrap; }
+.card {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-10px); }
+
+/* Contact */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+form input, form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  padding: 12px;
+  background: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button:hover { background: #00bcd4; }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+}
+/* AI Section */
+#ai {
+  background: #a89999;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 2px solid #ddd;
+
+  animation: rgbGlow 6s infinite alternate;
+}
+
+
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0 0 20px rgba(255,255,255,0.8);
+
+  
+}
+
+.ai-box {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#askAI {
+  padding: 12px 25px;
+  background: #3f51b5;
+  color: #fff;
+  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+#askAI:hover {
+  background: #00bcd4;
+}
+
+#aiResponse {
+  margin-top: 20px;
+  font-style: italic;
+  color: #333;
+}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Rishu Singh</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Rishu Singh</span></h1>
+      <p>A creative web designer & developer passionate about modern design.</p>
+      <button id="learnBtn">Explore My Work</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I specialize in building clean, responsive, and visually appealing websites. 
+       My focus is on combining creativity with functionality to deliver the best user experience.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A sleek personal portfolio showcasing my skills and projects.</p>
+      </div>
+      <div class="card">
+        <h3>E-commerce Design</h3>
+        <p>Modern shopping interface with smooth navigation and product highlights.</p>
+      </div>
+      <div class="card">
+        <h3>Landing Page</h3>
+        <p>Minimalist design with bold typography and engaging visuals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formResponse"></p>
+  </section>
+
+  <!-- Footer -->
+
+  <!-- AI Assistant Section -->
+<section id="ai">
+  <h2>AI Assistant</h2>
+  <div class="ai-box">
+    <p>Meet my AI companion — always ready to help, answer questions, and guide you through the site.</p>
+    <button id="askAI">Ask AI</button>
+    <p id="aiResponse"></p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2026 Rishu Singh. All rights reserved.</p>
+</footer>
+
+  <script>
+    // Smooth scroll
+document.querySelectorAll("nav a").forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+// Hero button
+document.getElementById("learnBtn").addEventListener("click", () => {
+  document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+});
+
+// Contact form
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  document.getElementById("formResponse").textContent =
+    `Thanks, ${name}! I'll reach out to you at ${email}.`;
+  this.reset();
+});
+// AI Assistant interaction
+document.getElementById("askAI").addEventListener("click", () => {
+  const responses = [
+    "Hello! I'm your AI assistant.",
+    "I can help you explore Rishu Singh's portfolio.",
+    "Need guidance? I'm here to assist.",
+    "Ask me anything about this site!"
+  ];
+  const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+  document.getElementById("aiResponse").textContent = randomResponse;
+});
+// script.js
+const colors = ["red", "green", "blue"];
+let i = 0;
+
+setInterval(() => {
+  document.body.style.backgroundColor = colors[i];
+  i = (i + 1) % colors.length;
+}, 2000); // changes every 2 seconds
+  </script>
+</body>
+</html>
